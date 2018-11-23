@@ -9,6 +9,56 @@
 	
 <body BGCOLOR=aqua>
 	
+	<nav>
+      <li class="parent"><a href="#">Cristalab</a>
+         <ul>
+            <li><a href="#">Blogs</a></li>
+            <li><a href="#">Foros</a></li>
+         </ul>
+      </li>
+      <li><a href="#">Mejorando.la</a></li>
+      <li><a href="#">L4C</a></li>
+      <li class="parent"><a href="#">Mas de Cristalab</a>
+         <ul>
+            <li><a href="#">Publica un tutorial</a></li>
+            <li><a href="#">¿Qué es Cristalab?</a></li>
+         </ul>
+      </li>
+ </nav>
+	
+	nav{
+   width:300px;
+   margin: 5% auto;
+}
+nav li{
+   list-style: none;
+   position:relative; /* importante, para que el submenu tome la posición correcta*/
+}
+nav li a{
+   text-decoration:none;
+   padding: 5px;
+   display:block;
+}
+nav li.parent:hover{
+   margin:-1px;
+}
+nav li li a{
+   width:250px;
+   display:block;
+}
+/* aquí esta lo importante!! */
+nav li ul {
+   width: 250px;
+   margin:0;
+   display:none;
+   position: absolute;
+   left: 100%;
+   top:-1px;
+}
+nav li:hover ul {
+   display: block;
+}
+	
     <h1 ALIGN=center>Otaku In Life</h1>
     
     <p ALIGN=center>
