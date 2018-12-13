@@ -1,0 +1,48 @@
+html {
+  /*font-size: 20px;*/
+}
+
+body{
+  background: #72d9fb;
+}
+
+section {
+ bakground: rgba(255,255,255,.6);
+ box-sizing:border-box;
+ font-size: .9em;
+ float: left;
+ margin; 1%;
+ padding 1em; 
+  }
+  
+  img {
+    max-width: 100%;
+    }
+
+@media (min-width: 360px){
+  body{
+    background: aqua;
+     } 
+     section {
+      width: 48%;
+     }
+}
+
+@media (min-width: 768px){
+  body{
+    background: red;
+     } 
+     section {
+      width: 31.33%;
+     }
+}
+
+@media (min-width: 1200px){
+  body{
+    background: yellow;
+     } 
+     section {
+      width: 23%;
+     }
+}
+
