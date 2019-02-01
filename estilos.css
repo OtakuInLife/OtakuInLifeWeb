@@ -51,3 +51,6 @@ section {
      }
 }
 
+@media video {
+    width:100%;
+}
