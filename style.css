@@ -111,23 +111,17 @@ input[type=checkbox]:checked ~ #menu{
 }
 </style>
 
-/* Podemos eliminar este estilo si no queremos que se adapte al ancho máximo */
-.delimitador{
-    width:560px;    /* Ancho máximo */
-    margin:auto;    /* Centramos el vídeo */
+.v-container {
+	position: relative;
+	padding-bottom: 56.25%; /* proporción 16:9 */
+	padding-top: 25px;
+	height: 0;
 }
-/* El contenedor con el padding-top crea el tamaño del vídeo */
-.contenedor{
-    height:0px;
-    width:100%;
-    padding-top:56.25%; /* Relación: 16/9 = 56.25% */
-    position:relative;
-}
-/* El iframe se adapta al tamaño del contenedor */
-.contenedor iframe{
-    position:absolute;
-    height:100%;
-    width:100%;
-    top:0px;
-    left:0px;
+
+.v-container iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
